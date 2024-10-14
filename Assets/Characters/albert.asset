@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f2faf821e9c2441b757a4da10da627, type: 3}
+  m_Name: albert
+  m_EditorClassIdentifier: 
+  SpeakerName: albert
+  image: {fileID: 21300220, guid: ca1f1e20c71399f4ab9c815c2528cc1c, type: 3}
+  lines:
+  - topic: intro
+    targetTopic: test
+    nextSpeaker: iheb
+    line:
+    - Hey, i'm albert, i'm testing if the dialogue system works fine.
+    optionsTrigger: 0
+    options: []
+  - topic: test2
+    targetTopic: question
+    nextSpeaker: albert
+    line:
+    - Oh! nice.. Good luck Iheb!
+    - Can i ask you something?
+    optionsTrigger: 1
+    options:
+    - Yes-yesOption
+    - No-noOption
+  - topic: yesOption
+    targetTopic: yes
+    nextSpeaker: iheb
+    line:
+    - Why did you come here?
+    optionsTrigger: 0
+    options: []
+  - topic: noOption
+    targetTopic: no
+    nextSpeaker: iheb
+    line:
+    - Oh.. I'm sorry.
+    optionsTrigger: 0
+    options: []
